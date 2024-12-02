@@ -2,6 +2,9 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import QueryProvider from "@/layouts/queryProvider";
+import MuiProvider from "@/layouts/muiProvider";
+
+// import theme from "@/theme";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -24,11 +27,15 @@ export default async function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  
   return (
     <html lang="en">
+      <head>
+        <meta name="viewport" content="initial-scale=1, width=device-width" />
+      </head>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        <QueryProvider>{children}</QueryProvider>
+        <QueryProvider>
+          <MuiProvider>{children}</MuiProvider>
+        </QueryProvider>
       </body>
     </html>
   );

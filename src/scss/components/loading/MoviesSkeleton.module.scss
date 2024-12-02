@@ -1,0 +1,21 @@
+.SkeletonList {
+  padding: 0 24px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(calc(20% - 8px), auto));
+  gap: 10px;
+}
+.SkeletonItem {
+  list-style: none;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  padding: 10px;
+}
+.SkeletonWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.FullplotSkeleton {
+  display: block;
+  margin-top: 20px;
+}

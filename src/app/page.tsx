@@ -18,6 +18,9 @@ export default function Home() {
           <li>
             <Link href="/movies">Go to Movies</Link>
           </li>
+          <li>
+            <Link href="/signUp">Go to Sign Up</Link>
+          </li>
         </ol>
       </main>
       <footer className={styles.footer}>

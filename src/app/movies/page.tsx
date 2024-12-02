@@ -1,16 +1,11 @@
-
 // find movies from mongodb
-import Movies from "./movies";
+import Movies from "@/views/movies/movies";
 
-
-const MoviesPage = async() => {
-  
-  
-
+const MoviesPage = async () => {
   return (
     <div>
       <h1>MoviesPage</h1>
-      <Movies  />
+      <Movies />
     </div>
   );
 };
